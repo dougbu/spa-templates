@@ -23,7 +23,7 @@ permissions:
 jobs:
   compare_repos:
     # Comment out this line to test the scripts in a fork
-    if: ${{ github.repository == env.TargetRepo }}
+    ##if: ${{ github.repository == env.TargetRepo }}
     name: "Compare the shared code in the ${{ env.SourceRepoName }} and ${{ env.TargetRepoName }} repos; open a ${{ env.TargetRepoName }} PR if they're out of sync."
     runs-on: windows-latest
     steps:
